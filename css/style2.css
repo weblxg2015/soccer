@@ -1,7 +1,211 @@
-body{
+*{
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: Arial;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
 a:hover{
     cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+@-webkit-keyframes frame1{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-webkit-keyframes frame2{
+    from{transform:translateX(20px)}
+    to{transform:translateX(0px)}
+}
+@-webkit-keyframes frame3{
+    from{transform:rotateX(0deg)}
+    to{transform:rotateX(360deg)}
+}
+@-webkit-keyframes frames4 {
+    from{-webkit-transform: rotateY(0deg)}
+    to{-webkit-transform: rotateY(360deg)}
+}
+.rmbg{
+    width: 100%;
+    height:768px;
+    background:url("../images/rmbg1.jpg") ;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+.rmlogo{
+  width: 211px;
+    height: 82px;
+}
+.rmul1{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-animation:frame1 5s linear,
+    frame2 2s linear;
+    /*frame1 3s linear;*/
+    /*-webkit-animation-delay:40.6s;*/
+    -webkit-animation-fill-mode :forwards;
+}
+
+.cup2{
+    width: 45px;
+    height: 73px;
+    background: url("../images/rmcup2.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup3{
+   width: 37px;
+    height: 73px;
+    background: url("../images/rmcup3.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup4{
+    width: 32px;
+    height: 73px;
+    background: url("../images/rmcup4.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup5{
+    width: 27px;
+    height: 73px;
+    background: url("../images/rmcup5.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup6{
+   width: 57px;
+    height: 73px;
+    background: url("../images/rmcup6.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup7{
+   width: 38px;
+    height: 73px;
+    background: url("../images/rmcup7.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup8{
+    width: 39px;
+    height: 73px;
+    background: url("../images/rmcup8.png");
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cup2:hover{
+    background: url("../images/rmcup2_1.png");
+}
+.cup3:hover{
+    background: url("../images/rmcup3_1.png");
+}
+.cup4:hover{
+    background: url("../images/rmcup4_1.png");
+}
+.cup5:hover{
+    background: url("../images/rmcup5_1.png");
+}
+.cup6:hover{
+    background: url("../images/rmcup6_1.png");
+}
+.cup7:hover{
+    background: url("../images/rmcup7_1.png");
+}
+.cup8:hover{
+    background: url("../images/rmcup8_1.png");
+}
+
+.rmmenu{
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    z-index: 5;
+}
+.rmmenu li{
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    border-right:1px solid #303030;
+    border-left: 1px solid #181818;
+}
+.rmmenu li:hover{
+    background-color: rgb(82, 82, 82);
+    background-image: url("../images/rmlogo.png");
+    background-size:30px auto;
+    background-repeat:no-repeat ;
+    background-position: left center;
+    -webkit-animation:frame3 0.5s linear;
+    -webkit-animation-fill-mode :forwards;
+}
+.imgshowbox{
+    position: relative;
+    left: 10%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.imgshow1{
+    width: 80%;
+    height: auto;
+    opacity: 0.8;
+    /*margin: 0 auto;*/
+    /*position: absolute;*/
+    /*top: 180px;*/
+    /*left: 20%;*/
+
+}
+
+
+
+@media screen and (max-width: 800px){
+    .rmlogo{
+        width: 111px;
+        height: 42px;
+    }
+    .rmmenu{
+        width: 100%;
+        height: 30px;
+    }
+    .rmmenu li{
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
+        width: 230px;
+        font-size: 15px;
+    }
+    .rmmenu li:hover{
+        background-color: rgb(82, 82, 82);
+        background-image: url("../images/rmlogo.png");
+        background-size:15px auto;
+        background-repeat:no-repeat ;
+        background-position: left center;
+    }
+}
+@media screen and (max-width: 540px){
+    .rmlogo{
+        width: 80px;
+        height: 30px;
+    }
+    .rmul1{
+        display: none;
+    }
+
+
+
 }
