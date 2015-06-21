@@ -6,7 +6,201 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial;
+    background: -webkit-gradient(linear,left top,right top,
+    from(#000000),to(#FE0000));
+    perspective: 2000px;
 }
 ul{
     list-style: none;
+}
+@-webkit-keyframes frame21{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-webkit-keyframes frame22{
+    from{transform: scale(3)}
+    to{transform: scale(1)}
+}
+@-webkit-keyframes frame23{
+    from{transform:rotate(0deg) }
+    to{transform:rotate(720deg)}
+}
+.mlbg{
+    width: 100%;
+    height: 668px;
+    position: fixed;
+    z-index: -1;
+}
+.mllogo{
+    width:450px;
+    height: auto;
+    position: relative;
+    -webkit-animation:frame21 0.5s linear,
+    frame22 0.5s linear,
+    frame23 0.5s linear;
+    margin-left: 50px;
+}
+.mlmenu{
+    width: 90%;
+    height: 65px;
+    margin:0 auto;
+    background:-webkit-gradient(linear,left top,left bottom,
+    from(#000000),to(#FE0000));;
+    display: flex;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.mlmenu li{
+    width:150px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+}
+.mlmenu li:nth-child(1){
+    margin-left: 68px;
+}
+.mlmenu li:hover{
+    background-image: url("../images/mlli_bg.jpg");
+    background-position: left center;
+    background-size: 35px auto;
+    background-repeat: no-repeat;
+}
+.mlimgshow{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.mlche1{
+    display: none;
+}
+.mlche2{
+    display: none;
+}
+.mlche3{
+    display: none;
+}
+.mllab1{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #888888;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    cursor: pointer;
+}
+.mllab2{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #888888;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    cursor: pointer;
+}
+.mllab3{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #888888;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    cursor: pointer;
+}
+.mlche1:checked ~ .mllab1{
+    border: 1px solid blue;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+.mlche2:checked ~ .mllab2{
+    border: 1px solid blue;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+.mlche3:checked ~ .mllab3{
+    border: 1px solid blue;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+.mlimg1{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.mlimg2{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.mlimg3{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.mlche1:checked ~ .mlimg1{
+    display: block;
+}
+.mlche2:checked ~ .mlimg2{
+    display: block;
+}
+.mlche3:checked ~ .mlimg3{
+    display: block;
+}
+
+
+@media screen and (max-width: 800px){
+    .mllogo{
+        width:300px;
+    }
+    .mlmenu{
+        height: 50px;
+        font-size: 16px;
+    }
+    .mlmenu li:nth-child(1){
+        margin-left: 10px;
+    }
+    .mlmenu li{
+        width:150px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .mlmenu li:hover{
+        background-position: left center;
+        background-size: 28px auto;
+    }
+
+}
+@media screen and (max-width: 540px){
+    .mllogo{
+        width:200px;
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .mlmenu{
+        height: 40px;
+        font-size: 13px;
+    }
+    .mlmenu li:nth-child(1){
+        margin-left: 0px;
+    }
+    .mlmenu li{
+        width:100px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .mlmenu li:hover{
+        background-position: left center;
+        background-size: 20px auto;
+    }
 }
