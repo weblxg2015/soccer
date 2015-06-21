@@ -16,21 +16,21 @@ a:hover{
     z-index: -99;
     /*transform-style: preserve-3d;*/
      perspective: 1000px;
-    -webkit-animation:frame1 15s linear;
+    -webkit-animation:frame11 15s linear;
     -webkit-animation-delay:15s;
     -webkit-animation-fill-mode :forwards;
     opacity: 0;
 
 }
-@-webkit-keyframes frame1{
+@-webkit-keyframes frame11{
     from{opacity: 0}
     to{opacity: 1}
 }
-@-webkit-keyframes frame2{
+@-webkit-keyframes frame12{
     from{transform: rotateY(0deg)}
     to{transform: rotateY(360deg)}
 }
-@-webkit-keyframes frame3{
+@-webkit-keyframes frame13{
     from{transform: translateY(20px)}
     to{transform: translateY(0px)}
 }
@@ -65,7 +65,7 @@ a:hover{
     font-family: MV Boli;
     font-size: 17px;
     line-height: 50px;
-    -webkit-animation:frame3 5s linear,
+    -webkit-animation:frame13 5s linear,
     frame1 3s linear;
     -webkit-animation-delay:38.6s;
     -webkit-animation-fill-mode :forwards;
@@ -129,7 +129,7 @@ a:hover{
     font-size: 25px;
     font-family: "MV Boli";
     opacity: 0;
-    -webkit-animation:frame1 1s linear;
+    -webkit-animation:frame11 1s linear;
     -webkit-animation-delay:38.6s;
     -webkit-animation-fill-mode :forwards;
     position: absolute;
@@ -138,79 +138,79 @@ a:hover{
 }
 .text1{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:36.2s;
     -webkit-animation-fill-mode :forwards;
 }
 .text2{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:36.4s;
     -webkit-animation-fill-mode :forwards;
 }
 .text3{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:36.6s;
     -webkit-animation-fill-mode :forwards;
 }
 .text4{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:36.8s;
     -webkit-animation-fill-mode :forwards;
 }
 .text5{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:37s;
     -webkit-animation-fill-mode :forwards;
 }
 .text6{
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:37.2s;
     -webkit-animation-fill-mode :forwards;
 }
 .text7{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:37.4s;
     -webkit-animation-fill-mode :forwards;
 }
 .text8{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:37.6s;
     -webkit-animation-fill-mode :forwards;
 }
 .text9{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:37.8s;
     -webkit-animation-fill-mode :forwards;
 }
 .text10{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:38.0s;
     -webkit-animation-fill-mode :forwards;
 }
 .text11{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:38.2s;
     -webkit-animation-fill-mode :forwards;
 }
 .text12{
     color: #f5f5f5;
     opacity: 0;
-    -webkit-animation:frame1 0.5s linear;
+    -webkit-animation:frame11 0.5s linear;
     -webkit-animation-delay:38.4s;
     -webkit-animation-fill-mode :forwards;
 }

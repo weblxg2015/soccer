@@ -20,7 +20,10 @@ ul{
     from{transform: scale(3)}
     to{transform: scale(1)}
 }
-
+@-webkit-keyframes frame03{
+    from{left: 0}
+    to{left: -720px}
+}
 .csbg{
     width: 100%;
     height: 668px;
@@ -78,9 +81,112 @@ ul{
     width: 100%;
     height: 20%;
     position: absolute;
-    background:rgba(0,10,58,0.75) ;
+    background:rgba(0,10,58,0.75);
     bottom: -20%;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
 }
+.csimg1_box:hover{
+    background: rgba(0, 10, 58, 0.92);
+}
+.csvideotitle{
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    background: #000033;
+    color: white;
+    font-size:30px;
+    margin-left: 5%;
+    line-height: 100px;
+    margin-top: 20px;
+}
+.csvideowrap{
+    width: 90%;
+    display: flex;
+    background: #000033;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.csvideobox{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+.csvideo1{
+    width: 100%;
+}
+.csvideotext_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 51, 0.47);
+    left: 0;
+    top: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.csvideotext_box2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 51, 0.47);
+    background-image: url("../images/play.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: -100%;
+    top: 0;
+}
+.csvideotext1{
+    position: absolute;
+    bottom: 3%;
+}
+.csvideobox:hover .csvideotext_box{
+    top: 0;
+    transition: all 0.5s linear;
+}
+.csvideobox:hover .csvideotext_box2{
+    left:0 ;
+    transition: all 0.5s linear;
+}
+.csplaywrap2{
+   width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear,left top,right top,
+    from(rgba(255, 255, 255, 0.31)),to(rgba(255, 255, 255, 0.31)),color-stop(0.5, rgba(255, 255, 255, 0)));
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.csplaywrap{
+    width: 90%;
+    height: 220px;
+    margin: 0 auto;
+    background: rgba(0, 0, 141, 0.48);
+    position: relative;
+    overflow: hidden;
+}
+.csplaywrap3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    -webkit-animation: frame03 6s linear;
+    -webkit-animation-iteration-count:1000;
+    -webkit-animation-direction:alternate;
+}
+.csplaybox1{
+    width: 150px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: "MV Boli";
+    border-right: 2px solid rgba(255, 255, 255, 0.25);
+}
+
 
 @media screen and (max-width: 800px){
     .cslogo{
@@ -103,7 +209,21 @@ ul{
         text-align: center;
         line-height: 50px;
     }
-
+    .csimg1_box{
+        font-size: 20px;
+        line-height: 80px;
+        text-align: center;
+    }
+    .csvideotitle{
+        height: 70px;
+        width: 90%;
+        font-size:20px;
+        margin-left: 5%;
+        line-height: 70px;
+    }
+    .csvideotext_box{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 540px){
     .cslogo{
@@ -125,5 +245,27 @@ ul{
         height: 40px;
         text-align: center;
         line-height: 40px;
+    }
+    .csimg1_box{
+        font-size: 15px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .csvideotitle{
+        height:50px;
+        width: 90%;
+        font-size:15px;
+        margin-left: 5%;
+        line-height: 50px;
+    }
+    .csvideowrap{
+        flex-direction: column;
+    }
+    .csvideobox{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .csvideotext_box{
+        font-size: 22px;
     }
 }
