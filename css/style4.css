@@ -155,12 +155,125 @@ ul{
 .mlche3:checked ~ .mlimg3{
     display: block;
 }
-
 .mlplayerwrap{
     width: 100%;
-    height: 500px;
-    border: 1px solid white;
+    height: 450px;
+ position: relative;
+    margin-top: 50px;
 }
+.mlche4{
+    display: none;
+}
+.mllab4{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius:75px;
+    color: #ffffff;
+    font-family: "MV Boli";
+    font-size: 25px;
+    line-height: 150px;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    background:url("../images/mllogo4.png");
+    background-position: center center;
+    background-size: 230px 150px;
+}
+.mlplayerimg1,.mlplayerimg2,.mlplayerimg3,.mlplayerimg4,
+.mlplayerimg5,.mlplayerimg6,.mlplayerimg7,.mlplayerimg8,
+.mlplayerimg9,.mlplayerimg10,.mlplayerimg11,.mlplayerimg12{
+    opacity: 0;
+}
+.mlplayerwrap1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.mlplayerwrap2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg1{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    /*-webkit-animation-delay:40.6s;*/
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg2{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:0.2s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg3{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:0.4s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg4{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:0.6s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg5{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:0.8s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap1 .mlplayerimg6{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:1.2s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg7{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:1.4s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg8{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:1.6s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg9{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:1.8s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg10{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:2.0s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg11{
+    -webkit-animation: frame21 0.5s linear,
+    frame22 0.5s linear;
+    -webkit-animation-delay:2.2s;
+    -webkit-animation-fill-mode :forwards;
+}
+.mlche4:checked ~ .mlplayerwrap2 .mlplayerimg12{
+     -webkit-animation: frame21 0.5s linear,
+     frame22 0.5s linear;
+     -webkit-animation-delay:2.4s;
+     -webkit-animation-fill-mode :forwards;
+ }
 
 @media screen and (max-width: 800px){
     .mllogo{
@@ -183,7 +296,27 @@ ul{
         background-position: left center;
         background-size: 28px auto;
     }
-
+    .mlplayerimg1,.mlplayerimg2,.mlplayerimg3,.mlplayerimg4,
+    .mlplayerimg5,.mlplayerimg6,.mlplayerimg7,.mlplayerimg8,
+    .mlplayerimg9,.mlplayerimg10,.mlplayerimg11,.mlplayerimg12{
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+    .mlplayerwrap{
+        height: 380px;
+        margin-top: 30px;
+    }
+    .mllab4{
+        width: 120px;
+        height: 120px;
+        border-radius:60px;
+        font-size: 20px;
+        line-height: 120px;
+        left: 45%;
+        top: 35%;
+        background-size: 200px 120px;
+    }
 }
 @media screen and (max-width: 540px){
     .mllogo{
@@ -208,4 +341,26 @@ ul{
         background-position: left center;
         background-size: 20px auto;
     }
+    .mlplayerimg1,.mlplayerimg2,.mlplayerimg3,.mlplayerimg4,
+    .mlplayerimg5,.mlplayerimg6,.mlplayerimg7,.mlplayerimg8,
+    .mlplayerimg9,.mlplayerimg10,.mlplayerimg11,.mlplayerimg12{
+        width: 50px;
+        height: 50px;
+        /*opacity: 0;*/
+    }
+    .mlplayerwrap{
+        height: 300px;
+        margin-top: 30px;
+    }
+    .mllab4{
+        width: 100px;
+        height: 100px;
+        border-radius:50px;
+        font-size: 17px;
+        line-height: 100px;
+        left: 45%;
+        top: 35%;
+        background-size: 180px 120px;
+    }
+
 }
