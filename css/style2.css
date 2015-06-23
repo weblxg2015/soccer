@@ -172,8 +172,8 @@ ul{
 }
 .imgshowbox{
     position: relative;
-    width: 100%;
-    left: 10%;
+    width: 80%;
+    /*left: 10%;*/
     margin: 0 auto;
     margin-top: 20px;
     overflow: hidden;
@@ -186,7 +186,7 @@ ul{
     /*border: 1px solid #000000;*/
 }
 .imgshowtext1{
-    width: 80%;
+    width: 100%;
     height:5%;
     position: absolute;
     background: rgba(0, 0, 0, 0.40);
@@ -195,7 +195,7 @@ ul{
 
 }
 .imgshowtext2{
-    width: 80%;
+    width: 100%;
     height:5%;
     position: absolute;
     background: rgba(0, 0, 0, 0.40);
@@ -203,7 +203,7 @@ ul{
     left: 100%;
 }
 .imgshowtext3{
-    width: 80%;
+    width: 100%;
     color: #ffffff;
     font-size: 20px;
     position: absolute;
@@ -224,15 +224,15 @@ ul{
     -webkit-animation-delay:3s;
     -webkit-animation-fill-mode :forwards;
 }
-.imgshow1{
-    width: 80%;
-    height: auto;
-    opacity: 0.9;
-}
+/*.imgshow1{*/
+    /*width: 80%;*/
+    /*height: auto;*/
+    /*opacity: 0.9;*/
+/*}*/
 .rmtitle1{
-    font-size: 30px;
+    font-size: 35px;
     margin-top:20px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .rmplayer_box2{
     width: 100%;
@@ -370,6 +370,9 @@ ul{
         height: 80px;
         margin-top: 10px;
     }
+    .rmtitle1{
+        font-size: 25px;
+    }
 }
 @media screen and (max-width: 540px){
     .rmlogo{
@@ -387,5 +390,8 @@ ul{
     }
     .rm_gifimgbox2{
         display: none;
+    }
+    .rmtitle1{
+        font-size: 20px;
     }
 }
