@@ -31,19 +31,35 @@ ul{
     from{-webkit-transform: rotateY(0deg)}
     to{-webkit-transform: rotateY(360deg)}
 }
+@-webkit-keyframes frame5 {
+    from{-webkit-transform: translateX(30px)}
+    to{-webkit-transform: translateX(0px)}
+}
+@-webkit-keyframes frame6 {
+    from{-webkit-transform: translateX(-30px)}
+    to{-webkit-transform: translateX(0px)}
+}
+@-webkit-keyframes frame7{
+    from{-webkit-transform: scale(1,0)}
+    to{-webkit-transform: scale(1,1)}
+}
+@-webkit-keyframes frame8{
+    from{left: -100%}
+    to{left: -0%}
+}
+@-webkit-keyframes frame9{
+    from{left: 100%}
+    to{left: -0%}
+}
+
 .rmbg{
-    /*width: 100%;*/
-    /*height:768px;*/
-    /*background:url("../images/rmbg1.jpg") ;*/
-    /*background-position: center center;*/
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*opacity: 0.1;*/
+
 }
 .rmlogo{
   width: 211px;
     height: 82px;
+    -webkit-animation:frame7 2s linear;
+    -webkit-animation-fill-mode :forwards;
 }
 .rmul1{
     display: flex;
@@ -52,8 +68,6 @@ ul{
     right: 0;
     -webkit-animation:frame1 5s linear,
     frame2 2s linear;
-    /*frame1 3s linear;*/
-    /*-webkit-animation-delay:40.6s;*/
     -webkit-animation-fill-mode :forwards;
 }
 
@@ -158,9 +172,57 @@ ul{
 }
 .imgshowbox{
     position: relative;
+    width: 100%;
     left: 10%;
     margin: 0 auto;
     margin-top: 20px;
+    overflow: hidden;
+    /*border: 1px solid #000000;*/
+}
+.imgshow1{
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    /*border: 1px solid #000000;*/
+}
+.imgshowtext1{
+    width: 80%;
+    height:5%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.40);
+    left: -100%;
+    bottom: 0;
+
+}
+.imgshowtext2{
+    width: 80%;
+    height:5%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.40);
+    bottom: 5%;
+    left: 100%;
+}
+.imgshowtext3{
+    width: 80%;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 3%;
+    opacity: 0;
+}
+.imgshowbox:hover .imgshowtext1{
+    -webkit-animation:frame8 3s linear;
+    -webkit-animation-fill-mode :forwards;
+}
+.imgshowbox:hover .imgshowtext2{
+    -webkit-animation:frame9 3s linear;
+    -webkit-animation-fill-mode :forwards;
+}
+.imgshowbox:hover .imgshowtext3{
+    -webkit-animation:frame1 2s linear;
+    -webkit-animation-delay:3s;
+    -webkit-animation-fill-mode :forwards;
 }
 .imgshow1{
     width: 80%;
@@ -172,39 +234,81 @@ ul{
     margin-top:20px;
     margin-left: 10%;
 }
-.store_box2{
+.rmplayer_box2{
     width: 100%;
     padding-top: 20px;
     position: relative;
 }
-.store_img2{
+.rmplayer_img2{
     width: 30%;
     position: relative;
     left: 60%;
+    cursor: pointer;
 }
-.store_img3{
+.rmplayer_img3{
     width: 40%;
     position: relative;
     left: 15%;
+    cursor: pointer;
 }
-.store_img3_text{
+.rmplayer_img3_text{
     font-size: 50px;
     font-family: "MV Boli";
     position: absolute;
-    top:30%;
+    top:10%;
     left: 64%;
 }
-.store_img5{
+.rmplayer_img5{
     width: 28%;
     position: relative;
     left: 65%;
+    cursor: pointer;
 }
-.store_img5_text{
+.rmplayer_img5_text{
     font-size: 50px;
     font-family: "MV Boli";
     position: absolute;
-    top:30%;
+    top:10%;
     left: 30%;
+}
+.rm_gifimgbox{
+    display: flex;
+    position: absolute;
+    width: 660px;
+    justify-content: space-between;
+    top:40%;
+    left: 10%;
+    opacity: 0;
+}
+.rm_gifimgbox2{
+    display: flex;
+    position: absolute;
+    width: 660px;
+    justify-content: space-between;
+    top:40%;
+    left: 45%;
+    opacity: 0;
+}
+.rm_gifimg{
+   width: 200px;
+    height: 120px;
+}
+.rmplayer_img2:hover ~ .rm_gifimgbox{
+    -webkit-animation:frame1 0.5s linear,
+    frame5 1s linear;
+    -webkit-animation-fill-mode :forwards;
+}
+.rmplayer_img3:hover ~ .rm_gifimgbox2{
+    -webkit-animation:frame1 0.5s linear,
+    frame6 1s linear;
+    -webkit-animation-fill-mode :forwards;
+}
+
+
+.rmplayer_img5:hover ~ .rm_gifimgbox{
+    -webkit-animation:frame1 0.5s linear,
+    frame5 1s linear;
+    -webkit-animation-fill-mode :forwards;
 }
 
 @media screen and (max-width: 800px){
@@ -230,17 +334,41 @@ ul{
         background-repeat:no-repeat ;
         background-position: left center;
     }
-    .store_imgtext{
+    .rmplayer_imgtext{
         font-size: 20px;
     }
-    .store_img3_text{
+    .rmplayer_img3_text{
         font-size: 20px;
     }
-    .store_img4_text{
+    .rmplayer_img4_text{
         font-size: 20px;
     }
-    .store_img5_text{
+    .rmplayer_img5_text{
         font-size: 20px;
+    }
+
+    .rm_gifimgbox{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 150px;
+        height: 260px;
+        top:30%;
+        left: 30%;
+    }
+    .rm_gifimgbox2{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 150px;
+        height: 260px;
+        top:25%;
+        left: 60%;
+    }
+    .rm_gifimg{
+        width: 150px;
+        height: 80px;
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 540px){
@@ -253,5 +381,11 @@ ul{
     }
     .rmmenu li{
         font-size: 12px;
+    }
+    .rm_gifimgbox{
+        display: none;
+    }
+    .rm_gifimgbox2{
+        display: none;
     }
 }

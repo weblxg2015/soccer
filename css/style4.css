@@ -180,6 +180,7 @@ ul{
     background:url("../images/mllogo4.png");
     background-position: center center;
     background-size: 230px 150px;
+    cursor: pointer;
 }
 .mlplayerimg1,.mlplayerimg2,.mlplayerimg3,.mlplayerimg4,
 .mlplayerimg5,.mlplayerimg6,.mlplayerimg7,.mlplayerimg8,

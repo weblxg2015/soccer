@@ -34,6 +34,10 @@ a:hover{
     from{transform: translateY(20px)}
     to{transform: translateY(0px)}
 }
+@-webkit-keyframes frame14{
+    from{transform: scale(3)}
+    to{transform: scale(1)}
+}
 .bgvid{
     position: fixed;
     right: 0; bottom: 0;
@@ -66,7 +70,7 @@ a:hover{
     font-size: 17px;
     line-height: 50px;
     -webkit-animation:frame13 5s linear,
-    frame1 3s linear;
+    frame11 3s linear;
     -webkit-animation-delay:38.6s;
     -webkit-animation-fill-mode :forwards;
     cursor: pointer;
@@ -99,20 +103,39 @@ a:hover{
     opacity: 0;
 }
 .ind_che:checked ~ .logo1{
-    opacity: 1;
-    transform: rotateY(360deg);
-    transition: all 0.5s linear;
+    /*opacity: 1;*/
+    /*transform: rotateY(360deg);*/
     /*transition: all 0.5s linear;*/
+    /*transition: all 0.5s linear;*/
+    /*-webkit-animation:frame11 0.5s linear*/
+    /*,frame14 0.5s linear;*/
+    -webkit-animation:frame11 0.5s linear,
+    frame12 0.5s linear,
+    frame14 0.5s linear;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode :forwards;
 }
 .ind_che:checked ~ .logo2{
-    opacity: 1;
-    transform: rotateY(360deg);
-    transition: all 0.5s linear 0.3s;
+    /*opacity: 1;*/
+    /*transform: rotateY(360deg);*/
+    /*transition: all 0.5s linear 0.3s;*/
+    /*-webkit-animation:frame11 0.5s linear*/
+    /*,frame14 0.5s linear;*/
+    -webkit-animation:frame11 0.5s linear,
+    frame12 0.5s linear,
+    frame14 0.5s linear;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode :forwards;
 }
 .ind_che:checked ~ .logo3{
-    opacity: 1;
-    transform: rotateY(360deg);
-    transition: all 0.5s linear 0.8s;
+    /*opacity: 1;*/
+    /*transform: rotateY(360deg);*/
+    /*transition: all 0.5s linear 0.8s;*/
+    -webkit-animation:frame11 0.5s linear,
+    frame12 0.5s linear,
+    frame14 0.5s linear;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-fill-mode :forwards;
 }
 .textwrap1{
  display: flex;
